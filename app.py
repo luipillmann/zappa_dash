@@ -159,3 +159,5 @@ def update_x_timeseries(hoverData, yaxis_column_name, axis_type):
 
 if __name__ == '__main__':
     app.run_server()
+else:
+    app.config['requests_pathname_prefix'] = '/dev' + app.config['requests_pathname_prefix']
